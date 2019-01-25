@@ -17,7 +17,7 @@ application on a single page. Applications written this way are called
 *portlets*, and are a mainstay of Liferay's platform. You can use
 [Liferay's MVC Portlet framework](/develop/tutorials/-/knowledge_base/7-1/liferay-mvc-portlet)
 or common frameworks such as [Spring MVC](/develop/tutorials/-/knowledge_base/7-1/spring-mvc)
-or [JSF](/develop/tutorials/-/knowledge_base/7-1/jsf-portlets-with-liferay-faces)
+or [JSF](develop/tutorials/-/knowledge_base/7-1/jsf-portlets-with-liferay-faces)
 to write portlets. If you plan to have a web-based interface to your
 application, and want its administrator to have a lot of flexibility configuring
 it, portlets provide a very powerful model. In this model you can create several
@@ -31,9 +31,8 @@ freedom to implement the UI in any other technology.
 Because of this, you can use Liferay as a headless platform, because it's easy
 to create [web services](/develop/tutorials/-/knowledge_base/7-1/web-services)
 based on [Service Builder](/develop/tutorials/-/knowledge_base/7-1/service-builder-web-services),
-[JAX-RS, and JAX-WS](/develop/tutorials/-/knowledge_base/7-1/jax-ws-and-jax-rs).
-Then you can build standalone web applications using any front-end technology or
-mobile technology you like. 
+JAX-RS, and JAX-WS. Then you can build standalone web applications using any
+front-end technology or mobile technology you like. 
 
 ## Extensibility [](id=extensibility)
 
@@ -250,7 +249,7 @@ portlet class:
                 throws IOException, PortletException
         {
             ThemeDisplay themeDisplay = (ThemeDisplay)
-                        renderRequest.getAttribute(WebKeys.THEME\_DISPLAY);
+                        renderRequest.getAttribute(WebKeys.THEME_DISPLAY);
 
             User user = themeDisplay.getUser();
 
